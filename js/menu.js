@@ -5,8 +5,12 @@
   }
 
   window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn') && !event.target.closest('.dropdown')) {
-      document.querySelectorAll('.dropdown-content').forEach(drop => drop.classList.remove('show'));
+    const isDropdown = event.target.closest('.dropdown');
+    const isButton = event.target.matches('.dropbtn') || event.target.closest('.dropbtn');
+
+    if (!isDropdown && !isButton) {
+      document.getElementById("dropdown-content")?.classList.remove("show");
     }
   };
 </script>
+
