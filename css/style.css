@@ -130,7 +130,7 @@ footer {
   background-color: #e0f2f1;
 }
 
-/* Show dropdown when triggered by JavaScript */
+/* Show dropdown on click */
 .show {
   display: block;
 }
